@@ -12,7 +12,7 @@ let welcomeBuddy1 = `${message2} ${message3}`;
 
 console.log(welcomeBuddy1);
 
-console.log('---------------------------------------')
+console.log('---------------------------------------');
 /// for Multiple Line.........
 
 // Before Introduce ES6
@@ -20,7 +20,7 @@ let welcome = "Hi! There.\n"+
               "I'm fine.\n" +
               "What about you?";
 console.log(welcome);
-console.log('-------------------------')
+console.log('-------------------------');
 // After Introduce ES6
 let greet = `Hi! There.
 I'm fine.
