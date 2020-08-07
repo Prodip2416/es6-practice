@@ -16,6 +16,7 @@
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(json => displayData(json))
+            .catch(error => console.log(error))
 
         function displayData(users) {
             const ul = document.getElementById('My-List');
