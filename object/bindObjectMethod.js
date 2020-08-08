@@ -1,11 +1,11 @@
 const person = {
     firstName: 'Todd',
-    lastName : 'Baloon',
-    salary : 20000,
-    getFullName: function(){
-        return this.firstName +' '+ this.lastName;
+    lastName: 'Baloon',
+    salary: 20000,
+    getFullName: function () {
+        return this.firstName + ' ' + this.lastName;
     },
-    chargeBill:function(bill){
+    chargeBill: function (bill) {
         this.salary = this.salary - bill;
         return this.salary;
     }
@@ -13,14 +13,14 @@ const person = {
 
 const personOne = {
     firstName: 'Piter',
-    lastName : 'Baloon',
-    salary : 25000
+    lastName: 'Baloon',
+    salary: 25000
 }
 
 const personTwo = {
     firstName: 'Marry',
-    lastName : 'Baloon',
-    salary : 30000
+    lastName: 'Baloon',
+    salary: 30000
 }
 
 const personOneBill = person.chargeBill.bind(personOne);
