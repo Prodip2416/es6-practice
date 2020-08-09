@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+<body>
+    <script>
+        let myObj = {
+            name:'Kuddus Ali',
+            getFullName: function(){
+                console.log(this);
+                return 'Mr. '+ this.name;
+            }
+        }
+
+        //console.log(myObj.getFullName);
+        let anotherObj = { name:'Biddut Ali'};
+
+        anotherObj.getFullName = myObj.getFullName;
+
+        console.log(myObj.getFullName());
+        console.log(anotherObj.getFullName());
+
+        function add(num1,num2){
+            console.log(this);
+            return num1 + num2;
+        }
+        add(12,13); // IF left side not anything then this call from the window
+
+        anotherObj.add = add;
+        anotherObj.add(); // IF yes, than call from them
+
+        
+
+         
+    </script>
+</body>
+</html>
