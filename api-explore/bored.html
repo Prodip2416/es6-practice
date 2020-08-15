@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bored Activity Api</title>
+</head>
+
+<body>
+    <h1 id="activity"></h1>
+    <h3>Here is the<a id="activity_link" href="http://www.boredapi.com/api/activity/" target="_blank"> API
+        </a> Link.</h3>
+
+    <script>
+
+        function doSomeThing() {
+            fetch('http://www.boredapi.com/api/activity/')
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    document.getElementById('activity').innerText = data.activity;
+                })
+        }
+        doSomeThing();
+        setInterval(() => {
+            doSomeThing();
+        }, 10000);
+
+    </script>
+</body>
+
+</html>
