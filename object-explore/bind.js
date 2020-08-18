@@ -2,7 +2,7 @@ const person = {
     name: 'Tom',
     salary: 15000,
     houseRent: function (amount) {
-        return this.salary = this.salary - amount ;
+        return this.salary = this.salary - amount;
     }
 };
 
