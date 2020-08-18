@@ -11,10 +11,10 @@ const firstPerson = {
     salary: 20000
 };
 
-person.chargeBill.apply(firstPerson,[ 2000, 100, 20]);
+person.chargeBill.apply(firstPerson, [2000, 200, 20]);
 
 console.log(`${person.name} Balance : ${person.salary}`);
 //Tom Balance : 15000
 
 console.log(`${firstPerson.name} Balance : ${firstPerson.salary}`);
-// Piter Balance : 17880
+// Piter Balance : 17780
