@@ -42,3 +42,23 @@ const numbers = [3, 5, 8, 9, 12];
 // 24 9
 // 15 12
 // Result: 3
+
+// const employeeList = [
+//     {
+//         name: 'Piter',
+//         salary: 1200
+//     },
+//     {
+//         name: 'Harry',
+//         salary: 1500
+//     },
+//     {
+//         name: 'Mark',
+//         salary: 1800
+//     }
+// ];
+
+// const totalSalary = employeeList.reduce((sum, employee) => sum + employee.salary, 0);
+
+// console.log(totalSalary);
+// 4500
