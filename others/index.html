@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="data">
+        <p>data-1</p>
+        <p>data-2</p>
+        <p>data-3</p>
+        <p>data-4</p>
+    </div>
+</body>
+<script>
+    const mainData = ['data-2','data-3'];
+    const dataList = document.querySelectorAll('.data p');
+
+    dataList.forEach(item=>{
+        if(mainData.includes(item.innerText)){
+            item.classList.add('active');
+        }
+    });
+
+</script>
+</html>
